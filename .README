@@ -1,0 +1,18 @@
+# Wordpress Docker Container
+
+## Requirements:
+- Docker
+
+If you have brew installed you can install docker like this:
+`brew cask install docker` 
+
+otherwise download docker here:
+https://www.docker.com/products/docker-desktop
+
+You'll need to fill out your enviorment variables, remove 'example' from the .env file.
+
+
+## How to run 
+`docker-compose up -d`
+
+Happy coding!
