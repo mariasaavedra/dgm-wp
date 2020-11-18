@@ -1,0 +1,131 @@
+@import "common/variables";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+
+/** Import theme styles */
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/wp-classes";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link,
+.banner,
+.nav a {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-family: "rift-soft", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bg-header {
+  background-image: url("../images/hero-bg.png");
+  padding: 6rem;
+}
+
+.text-banner {
+  background-image: url("../images/banner-bg.png");
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.page-template-contact .wrap {
+  background: url("../images/banner-bg.png");
+  min-height: 75vh;
+}
+
+footer {
+  background: #fff;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../images/menu.png");
+  background-size: cover;
+  border: 0;
+}
+
+form {
+  text-align: center;
+  padding: 2rem;
+
+  input,
+  textarea {
+    margin: 1rem 0;
+    border: none !important;
+    padding: 0.5rem;
+    border-radius: 3px;
+    background: #eee !important;
+
+    &:active,
+    &:hover,
+    &:focus {
+      background: #eee !important;
+    }
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  font-family: $font-family-sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  padding: 0.75rem 1.5rem;
+}
+
+.vh-50 {
+  height: 50vh;
+}
+
+.vh-75 {
+  height: 75vh;
+}
+
+.p-10 {
+  padding: 10rem 0;
+}
+
+.product-item {
+  height: 250px;
+  background-size: cover;
+}
+
+.product-item-thumbnail {
+  border: 2px solid #000;
+}
+
+@include media-breakpoint-down(sm) {
+  .display-3,
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    font-size: 0.75rem;
+  }
+}

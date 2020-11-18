@@ -1,0 +1,18 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  primary: #657074,
+  white: #e7eaef
+);
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+$border-radius: 0;
+$font-family-sans-serif: "din-2014", sans-serif;
+$font-family-sans-serif-narrow: "din-2014-narrow", sans-serif;
+$headings-font-family: "rift", sans-serif;
+$headings-font-weight:  300;
+
